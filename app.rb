@@ -18,7 +18,7 @@ class App < Sinatra::Base
     @user_name = user_name.select do |name|
       @user_name.id == params[:name]
       "Goodbye, #{user_name}!"
-    end.first
+    end
     erb :'/multiply/:num1/:num2'
   end
 
